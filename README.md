@@ -24,4 +24,4 @@
   |> Enum.map(&String.to_integer(&1))
 ```
 
-とかで、やり方ケースバイケースでinputをfetchしてくる。
+とかで、やり方ケースバイケースでinputをfetch
