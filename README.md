@@ -1,27 +1,39 @@
 # HackerRank Elixir memo and submit files
 
-#### [__HackerRank__](https://www.hackerrank.com/dashboard) でのElixirコーディング自己練リポジトリ。
+[__HackerRank__](https://www.hackerrank.com/dashboard)
+にsubmitしたElixirソースコード集。
 
-[Practice > __Functional Programming__](https://www.hackerrank.com/domains/fp?filters%5Bstatus%5D%5B%5D=unsolved)
+- [Practice > __Functional Programming__](https://www.hackerrank.com/domains/fp?filters%5Bstatus%5D%5B%5D=unsolved)
 
----
 
-## いろいろメモ
-
-### 標準入力
-
-#### e.g.
-
-```
+## 入力処理メモ
+- 1行もの
+  ```
   val_input = IO.gets("") |> String.trim() |> String.to_integer
-```
+  ```
 
-とか
-
-```
+- 数値1カラムもの
+  ```
   IO.read(:stdio, :all)
   |> String.split("\n")
   |> Enum.map(&String.to_integer(&1))
-```
+  ```
 
-とかで、やり方ケースバイケースでinputをfetch
+## 出力処理メモ
+- 1行
+  ```
+  |> IO.inspect
+  ```
+  - 簡単なものなら`IO.puts`でOK。
+
+- `List`から数値1カラムで出力
+  ```
+  |> Enum.map(&IO.inspect(&1))
+  ```
+  ```
+  # Sample Output
+
+  2
+  1
+  0
+  ```
