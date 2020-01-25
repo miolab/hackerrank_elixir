@@ -9,6 +9,7 @@
 ## 入力処理メモ
 - 1行もの
   ```
+  # e.g.
   val_input = IO.gets("") |> String.trim() |> String.to_integer
   ```
 
@@ -24,7 +25,7 @@
   ```
   |> IO.inspect
   ```
-  - 簡単なものなら`IO.puts`でOK。
+  - 簡単なものなら`IO.puts`でもOK。
 
 - `List`から数値1カラムで出力
   ```
