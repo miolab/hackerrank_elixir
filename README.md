@@ -8,8 +8,9 @@
 
 ## 入力処理メモ
 - 1行もの
+
+  e.g.
   ```
-  # e.g.
   val_input = IO.gets("") |> String.trim() |> String.to_integer
   ```
 
@@ -25,13 +26,12 @@
   ```
   |> IO.inspect
   ```
-  - 簡単なものなら`IO.puts`でもOK。
-
   - 要素数が多い場合は、`limit:`オプションに`:infinity`を指定することで  
    `iex`での出力結果省略を回避できる。
     ```
     |> IO.inspect(limit: :infinity)
     ```
+  - 簡単な1行なら`IO.puts`でもOK。
 
 
 - リスト中の要素を、1カラムにして出力
