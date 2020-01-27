@@ -27,7 +27,14 @@
   ```
   - 簡単なものなら`IO.puts`でもOK。
 
-- `List`から数値1カラムで出力
+  - 要素数が多い場合は、`limit:`オプションに`:infinity`を指定することで  
+   `iex`での出力結果省略を回避できる。
+    ```
+    |> IO.inspect(limit: :infinity)
+    ```
+
+
+- リスト中の要素を、1カラムにして出力
   ```
   |> Enum.map(&IO.inspect(&1))
   ```
