@@ -31,4 +31,10 @@ Sample Input
   10000 12345
 Sample Output
   5
+
+----
+
+GCD... 最大公約数
+(greatest common divisor)
+
 """
